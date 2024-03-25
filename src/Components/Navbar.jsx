@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-lg px-4 fixed z-10">
       <div className="flex-1">
-        <a className="btn btn-ghost gap-0 text-2xl font-bold text-amber-900">
+        <a className="btn btn-ghost gap-0 text-2xl font-bold">
           Tech<span className="text-teal-700">Trendz</span>
         </a>
       </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <NavLink to = '/bookmarks' className={({ isActive }) => isActive ? 'text-white  bg-teal-600' : 'text-md font-bold text-teal-600'}>Bookmarks</NavLink>
           </li> 
 
-         <label className="flex cursor-pointer gap-2 mt-2">
+         <label className="flex cursor-pointer gap-2 mt-2 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

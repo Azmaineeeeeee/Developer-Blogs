@@ -5,7 +5,7 @@ import rehypeRaw from "rehype-raw";
 
 const Content = () => {
   const blog = useLoaderData();
-  const { title, description, cover_image, published_at, tags,body_html } = blog;
+  const { title, cover_image, tags,body_html } = blog;
   
   return (
     <div className="border-teal-800 border p-2">
@@ -38,7 +38,9 @@ const Content = () => {
         <h3 className="text-3xl font-semibold group-hover:underline underline">
           {title}
         </h3>
+        <div className="overflow-hidden">
         <Markdown rehypePlugins={[rehypeRaw]}>{body_html}</Markdown>
+        </div>
 
 
 
@@ -48,3 +50,6 @@ const Content = () => {
 };
 
 export default Content;
+
+
+
